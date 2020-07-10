@@ -1,0 +1,83 @@
+:root{
+--col-witdh: 8.3333333333%;
+}
+
+
+.container{
+    max-width:900px;
+    margin: auto;
+}
+ .container1{
+     display: flex;
+     max-width: 900px;
+     margin: auto;
+ }
+ .container2{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-flow: row-reverse;
+}
+.container3{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.row{
+    padding: 24% 0;
+    display: flex;
+}
+.col-1{
+    width: calc(var(--col-witdh) * 1);
+}
+.col-2{
+    width: calc(var(--col-witdh) * 2);
+}
+.col-3{
+    width: calc(var(--col-witdh) * 3);
+}
+.col-4{
+    width: calc(var(--col-witdh) * 4);
+}
+.col-5{
+    width: calc(var(--col-witdh) * 5);
+}
+.col-6{
+    width: calc(var(--col-witdh) * 6);
+}
+.col-7{
+    width: calc(var(--col-witdh) * 7);
+}
+.col-8{
+    width: calc(var(--col-witdh) * 8);
+}
+.col-9{
+    width: calc(var(--col-witdh) * 9);
+}
+.col-10{
+    width: calc(var(--col-witdh) * 10);
+}
+.col-11{
+    width: calc(var(--col-witdh) * 11);
+}
+.col-12{
+    width: calc(var(--col-witdh) * 12);
+}
+
+[class*="col-"]{/* Selecciona los atributos class cuyos valores tengan subcadena col- */
+    padding: 30px;
+}
+
+@media (max-width:900px){
+    .row{
+        display: inherit;
+    }
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+/*
+container>row>column
+*/

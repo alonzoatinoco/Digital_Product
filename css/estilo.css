@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*---------------------------------------Variables*/
+
+:root{
+    --green-color:#7acc2d;
+    --white-color:white;
+    --black-color:#313337;
+    /*Tipografia*/
+    --normal:12px;
+    /*Espaciado*/
+    --space:10px;
+    /*box shadow*/
+    --box:0 0 2px 1px #c1bcbc;
+}
+
+
+
+/*---------------------------------------Variables*/
+
+html, body{
+    padding: 0;
+    margin: 0px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;;
+}
+
+nav{
+    display: flex;
+    background-color:var(--green-color);
+    padding: 20px;
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+
+nav ul{
+    display: flex;
+
+}
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color:var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+
+}
+
+/*------------------------------------Main section-------------------------*/
+.main_section{
+    padding: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+/*----------------------------------------------------------fin main_section*/
+
+
+/*----------------------------------------------------------products*/
+.products{
+    background-image: url("../imagenes/fondo.svg");
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 25%;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    display: flex;
+    
+}
+.product{
+    padding: var(--space);
+    margin-top: -400px;
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+.img_content{
+    text-align: center;
+}
+
+.main_buttom{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_buttom:hover{
+    background-color: #5e9e22;
+
+}
+/*----------------------------------------------------------fin products*/
+
+/*----------------------------------------------------------I---*/
+.productsI{ 
+    
+    padding: 6%;
+    padding-left: 7%;
+    padding-bottom: 0px;
+    display: flex;
+    
+}
+.productI{
+    padding: 0 150px 0 150px;
+    margin-top: 0px;
+}
+
+/*----------------------------------------------------------fin I*/
+
+/*---------------------------------------------------------- main_sectionI*/
+.main_sectionI{
+    padding: 15%;
+    padding-top: 4%;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.productsII{
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+}
+.productII .contentII{
+    margin: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2px;
+    opacity: 1;
+    
+}
+
+.contentII h1{
+    margin: 0px;
+    padding: 0px 5px 12px 15px;
+}
+.contentII p{
+    margin-top: -10px;
+    text-align: left;
+    padding: 0 0px 10px 15px;
+}
+.img_contentII{
+    margin: auto;
+}
+
+/*----------------------------------------------------------fin main_sectionI*/
+
+/*----------------------------------------------------------footer*/
+
+.footer{
+    height: 60px;
+    background-color:#1a252c ;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 0px;
+    
+}
+
+.contact a{
+    color: var(--green-color);
+
+}
+
+/*----------------------------------------------------------fin footer*/
+
+/*----------------------------------------------------------Venta*/
+
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.modulo_pago_images{
+    max-width: 200px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+    
+}
+.modulo_pago .main_buttom{
+    margin-top: 10px;
+}
+
+/*----------------------------------------------------------fin Venta*/
